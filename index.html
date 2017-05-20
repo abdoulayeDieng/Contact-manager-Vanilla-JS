@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Contact Manager Vanilla JS</title>
+	  <meta charset="utf-8">
+		
+	</head>
+	<body>
+	  <section id="list">
+	  	<h2>Liste des contacts</h2>
+	    <ul class="contactlist">
+	    
+	    </ul>
+	    <p><button id="btn_add_view">Ajoutez un contact</button></p>
+	  </section>
+	  
+	  <section id="add_view">
+	    <h2>Formulaire d'ajout d'un contact</h2>
+	  	<p>
+	  	   <input id="nom" placeholder="Nom du contact" required>
+	  	   <br><input id="prenom" placeholder="Prénom du contact" required>	
+	  	   <br><input id="phone" placeholder="Téléphone du contact" required>	
+	  	   <br><input id="email" type="email" placeholder="Email du contact" required>
+	  	</p>
+	  	<p><button id="btn_add">Ajoutez le contact</button>&nbsp;&nbsp;<button id="btn_annuler1">Annulez</button></p>
+	  </section>
+	  
+	  <section id="details_view">
+	    <h2>Coordonnées d'un contact</h2>
+	  	<p>
+	  	   <label for="nom_d">Nom : </label> <input id="nom_d" required>
+	  	   <br><label for="prenom_d">Prénom : </label><input id="prenom_d" required>	
+	  	   <br><label for="phone_d">Telephone : </label><input id="phone_d" required>	
+	  	   <br><label for="email_d">Email : </label><input id="email_d" type="email" required>
+	  	   <input type="hidden" id="selected_id">
+	  	</p>
+	  	<p><button id="btn_update">Enregistrez les modifications</button> &nbsp;&nbsp;<button id="btn_remove">Supprimez le contact</button>&nbsp;&nbsp;<button id="btn_annuler2">Annulez</button></p>
+	  </section>
+	 
+	  <script type="text/javascript" src="js/jquery.js" ></script>
+	  <script type="text/javascript" src="js/contact-manager.js"></script>
+	</body>
+</html>
+
